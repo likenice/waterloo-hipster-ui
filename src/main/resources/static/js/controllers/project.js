@@ -3,8 +3,8 @@
 angular.module('app').controller('ProjectController', ['$scope', '$http', '$state', function($scope, $http, $state) {
 
     // 基本信息
-    $scope.groupId = '';
-    $scope.artifactId = '';
+    $scope.groupId = 'com.xy';
+    $scope.artifactId = 'service-demo';
     $scope.port = '';
     $scope.version = '1.0.0';
     $scope.description = 'Demo project for Spring Cloud';
@@ -24,11 +24,11 @@ angular.module('app').controller('ProjectController', ['$scope', '$http', '$stat
 
     // 数据库连接
     $scope.dbType = 'MySQL';
-    $scope.dbIP = '192.168.75.159';
+    $scope.dbIP = '127.0.0.1';
     $scope.dbPort = '3306';
-    $scope.dbName = 'bookshop_user';
-    $scope.dbUsername = 'zj_admin';
-    $scope.dbPassword = '123456';
+    $scope.dbName = 'test';
+    $scope.dbUsername = 'root';
+    $scope.dbPassword = 'root';
 
     // 数据库表
     $scope.tables = [];
@@ -38,12 +38,12 @@ angular.module('app').controller('ProjectController', ['$scope', '$http', '$stat
     $scope.tableList = [];
 
     // 包信息
-    $scope.author = '';
-    $scope.projectDir = '';
+    $scope.author = 'wangxun';
+    $scope.projectDir = '/Users/likenice/workspace_xiyu/service-demo';
     $scope.javaDir = 'src/main/java';
     $scope.resourcesDir = 'src/main/resources';
     $scope.testDir = 'src/test/java';
-    $scope.basePackage = '';
+    $scope.basePackage = 'com.rent.service.user';
     $scope.configPackage = 'config';
     $scope.controllerPackage = 'web';
     $scope.servicePackage = 'service';
