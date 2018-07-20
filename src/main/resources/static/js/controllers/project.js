@@ -4,7 +4,7 @@ angular.module('app').controller('ProjectController', ['$scope', '$http', '$stat
 
     // 基本信息
     $scope.groupId = 'com.xy';
-    $scope.artifactId = 'service-demo';
+    $scope.artifactId = 'service-user';
     $scope.port = '';
     $scope.version = '1.0.0';
     $scope.description = 'Demo project for Spring Cloud';
